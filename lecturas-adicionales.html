@@ -1,0 +1,969 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Aprender el lenguaje [Kotlin 2.4] mediante ejemplos">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/ales-kotlin-oct-2026/lecturas-adicionales.html">
+      
+      
+        <link rel="prev" href="servicios-web.html">
+      
+      
+        <link rel="next" href="apendices.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>14. Lecturas adicionales - Aprender el lenguaje [Kotlin 2.4] mediante ejemplos</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Aprender el lenguaje [Kotlin 2.4] mediante ejemplos";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#14-lecturas-adicionales" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Aprender el lenguaje [Kotlin 2.4] mediante ejemplos" class="md-header__button md-logo" aria-label="Aprender el lenguaje [Kotlin 2.4] mediante ejemplos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Aprender el lenguaje [Kotlin 2.4] mediante ejemplos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              14. Lecturas adicionales
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/ales-kotlin-oct-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Aprender el lenguaje [Kotlin 2.4] mediante ejemplos" class="md-nav__button md-logo" aria-label="Aprender el lenguaje [Kotlin 2.4] mediante ejemplos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Aprender el lenguaje [Kotlin 2.4] mediante ejemplos
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/ales-kotlin-oct-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bienvenido
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduccion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuracion-del-entorno-de-desarrollo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Configuración del entorno de desarrollo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fundamentos-del-lenguaje-kotlin.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Fundamentos del lenguaje Kotlin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clases-interfaces-y-data-classes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Clases, interfaces y data classes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clases-de-kotlin-de-uso-comun.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Clases de Kotlin de uso común
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arquitecturas-en-capas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Arquitecturas en capas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tipos-funcionales-lambdas-y-eventos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Tipos funcionales, lambdas y eventos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hilos-de-ejecucion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Hilos de ejecución
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion-asincrona-con-corrutinas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Programación asíncrona con corrutinas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="acceso-a-bases-de-datos-con-jdbc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Acceso a bases de datos con JDBC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hibernate.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Hibernate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programacion-web.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Programación web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="servicios-web.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Servicios web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Lecturas adicionales
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="lecturas-adicionales.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Lecturas adicionales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#141-procesamiento-de-documentos-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1. Procesamiento de documentos XML
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#142-aplicaciones-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2. Aplicaciones web
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#143-aplicaciones-moviles-y-de-escritorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3. Aplicaciones móviles y de escritorio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#144-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.4. Pruebas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#145-rendimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.5. Rendimiento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#146-despliegue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.6. Despliegue
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#147-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.7. Recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="apendices.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. Apéndices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="14-lecturas-adicionales">14. <span style="color: #2e74b5">Lecturas adicionales</span></h1>
+<p>Este documento presentó el lenguaje Kotlin y las bibliotecas más utilizadas para escribir aplicaciones por capas, clientes y servidores de red, y servicios web en la máquina virtual de Java. Estos son los principales temas que continúan a partir de aquí.</p>
+<h2 id="141-procesamiento-de-documentos-xml">14.1. <span style="color: #2e74b5">Procesamiento de documentos XML</span></h2>
+<p>JSON ha reemplazado en gran medida a XML para el intercambio de datos, pero XML sigue en uso (archivos de configuración, formatos de documentos, servicios SOAP existentes). Kotlin usa directamente la API XML del JDK, dentro del paquete <em>[javax.xml]</em>:</p>
+<ul>
+<li><strong>DOM</strong> (<em>[DocumentBuilder]</em>, <em>[Document]</em>, <em>[Element]</em>): el documento se carga en memoria como un árbol, que luego se recorre y se modifica;</li>
+<li><strong>StAX</strong> (<em>[XMLStreamReader]</em>, <em>[XMLStreamWriter]</em>): el documento se lee o se escribe sobre la marcha, sin cargarlo por completo en memoria;</li>
+<li><strong>XPath</strong> (<em>[javax.xml.xpath]</em>) para consultar un documento y <strong>XSLT</strong> (<em>[javax.xml.transform]</em>) para transformarlo.</li>
+</ul>
+<p>Además del JDK, Jackson puede leer y escribir XML mediante su módulo <em>[jackson-dataformat-xml]</em>, tal como lo hace con JSON (capítulo 5), y la biblioteca <strong>kotlinx.serialization</strong> de JetBrains, que genera el código de serialización en tiempo de compilación, también admite formatos XML desarrollados por la comunidad.</p>
+<h2 id="142-aplicaciones-web">14.2. <span style="color: #2e74b5">Aplicaciones web</span></h2>
+<p>El capítulo 13 cubre únicamente los servicios web (aplicaciones que producen datos). Para aplicaciones web que generan páginas HTML, o para otras formas de escribir servicios web en Kotlin, se dispone de lo siguiente:</p>
+<ul>
+<li><strong>Spring MVC</strong> con un motor de plantillas como <strong>Thymeleaf</strong>: páginas generadas en el servidor. Spring admite Kotlin igual que Java (clases de datos, corrutinas en los controladores, Kotlin para la configuración de rutas); el autor escribió el curso <a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDQPOP8jPlWRodnqilZ0IVwAUIxqTMTUUsPq6-V8iqSKpY"><u><span style="color: #0563c1">“Introducción paso a paso al framework web Spring”</span></u></a> (septiembre de 2026);</li>
+<li><strong>Ktor</strong>, el framework web de JetBrains, escrito en y para Kotlin: servidores y clientes HTTP construidos sobre las corrutinas del capítulo 9, configurados mediante código Kotlin en lugar de anotaciones;</li>
+<li>otros frameworks de la JVM que admiten Kotlin: <strong>Quarkus</strong>, <strong>Micronaut</strong>, <strong>Javalin</strong> y los servidores de aplicaciones <strong>Jakarta</strong> <strong>EE</strong>;</li>
+<li>interfaces escritas en JavaScript (Vue.js, Angular, React) que consumen servicios web Kotlin; el autor escribió el curso <a href="https://stahe.github.io/ales-java-oct-2026/"><u><span style="color: #0563c1">“Introducción paso a paso al framework Vue.js</span></u></a>” (septiembre de 2026). El propio Kotlin puede compilarse a JavaScript (Kotlin/JS) o a WebAssembly (Kotlin/Wasm), lo que también permite escribir el lado del cliente en Kotlin.</li>
+</ul>
+<h2 id="143-aplicaciones-moviles-y-de-escritorio">14.3. <span style="color: #2e74b5">Aplicaciones móviles y de escritorio</span></h2>
+<p>Este documento no cubre las interfaces gráficas de usuario: hoy en día, las aplicaciones de gestión se construyen con mayor frecuencia con interfaces web. Sin embargo, es un ámbito en el que Kotlin se usa ampliamente:</p>
+<ul>
+<li>en <strong>Android</strong>, Kotlin es el lenguaje recomendado por Google, y la interfaz de usuario se construye con <strong>Jetpack Compose</strong>, una biblioteca declarativa escrita íntegramente en Kotlin; las corrutinas (capítulo 9) se usan para mantener la interfaz receptiva durante el acceso a la red o a bases de datos;</li>
+<li><strong>Compose Multiplatform</strong>, de JetBrains, extiende Compose para escribir interfaces de escritorio (Windows, Linux, macOS), iOS y web con el mismo código;</li>
+<li>De manera más general, <strong>Kotlin Multiplatform</strong> permite compartir código de lógica de negocio (las capas <em>[business] y [dao]</em> del capítulo 6, por ejemplo) entre la JVM, Android, iOS (mediante Kotlin/Native, que genera código máquina sin máquina virtual) y la web;</li>
+<li>en la JVM, las bibliotecas Java <strong>Swing</strong> y <strong>JavaFX</strong> siguen siendo utilizables desde Kotlin. Los conceptos tratados en los Capítulos 7 (escuchas de eventos) y 9 (regreso al hilo de la GUI con <em>[Dispatchers.Main]</em>) se aplican directamente aquí.</li>
+</ul>
+<h2 id="144-pruebas">14.4. <span style="color: #2e74b5">Pruebas</span></h2>
+<p>El Capítulo 6 presenta JUnit y <em>[kotlin.test]</em>. A menudo se complementan con:</p>
+<ul>
+<li><strong>Kotest</strong>, un framework de pruebas escrito para Kotlin, que ofrece varios estilos para escribir pruebas y una amplia biblioteca de aserciones (<strong><em>[list shouldHaveSize 7]</em></strong>);</li>
+<li><strong>MockK</strong>, la biblioteca de “mocks” (objetos simulados) para las capas de las que depende la capa bajo prueba, diseñada para Kotlin (clases finales, objetos, funciones de suspensión); <strong>Mockito</strong> sigue siendo utilizable;</li>
+<li><strong>kotlinx-coroutines-test</strong>, que ejecuta pruebas de código basado en corrutinas usando un reloj virtual: un <strong><em>[delay(10_000)]</em></strong> se ejecuta al instante;</li>
+<li><strong>Testcontainers</strong>, que lanza una base de datos real (MySQL, PostgreSQL…) en un contenedor Docker durante las pruebas de integración;</li>
+<li>las herramientas de prueba de Spring Boot (<em>[@SpringBootTest]</em>, <em>[MockMvc]</em>) para probar un servicio web sin desplegarlo.</li>
+</ul>
+<h2 id="145-rendimiento">14.5. <span style="color: #2e74b5">Rendimiento</span></h2>
+<p>Un programa Kotlin es ejecutado por la máquina virtual Java (JVM): se beneficia de la compilación just-in-time y de las optimizaciones en tiempo de ejecución, con un rendimiento equivalente al de un programa Java. Entre las herramientas que van un paso más allá:</p>
+<ul>
+<li>la herramienta <strong>JMH</strong> (“Java Microbenchmark Harness”), que se puede usar directamente en Kotlin o mediante el complemento de Gradle <strong>kotlinx-benchmark</strong>, para medir con precisión el rendimiento del código teniendo en cuenta el calentamiento de la máquina virtual;</li>
+<li><strong>JDK Flight Recorder</strong> y <strong>JDK Mission Control</strong>, que registran y analizan el comportamiento de un programa en producción; IntelliJ IDEA incluye un generador de perfiles y un depurador de corrutinas;</li>
+<li>la compilación anticipada a código nativo con <strong>GraalVM Native Image</strong>: un ejecutable independiente que se inicia en unos pocos milisegundos, a costa de restricciones en la reflexión; Spring Boot y Quarkus pueden generar estos ejecutables a partir de código Kotlin;</li>
+<li>la elección del recolector de basura (G1 por defecto, ZGC para pausas muy cortas con grandes montones de memoria).</li>
+</ul>
+<h2 id="146-despliegue">14.6. <span style="color: #2e74b5">Despliegue</span></h2>
+<p>Un programa Kotlin se despliega igual que un programa Java: como un archivo <em>[.jar]</em> ejecutado por un JDK instalado en la máquina (<strong><em>[java -jar application.jar]</em></strong>), siempre que se incluya la biblioteca estándar de Kotlin (es lo que hacen los scripts generados por <strong><em>[gradlew installDist]</em></strong>, Capítulo 2; Spring Boot genera un <em>[.jar]</em> independiente que contiene todas sus bibliotecas), como una aplicación independiente que incorpora una máquina virtual reducida a lo estrictamente necesario (herramientas <em>[jlink]</em> y <em>[jpackage]</em> del JDK), o en un <strong>contenedor</strong> Docker (Spring Boot genera directamente una imagen de contenedor mediante <strong><em>[gradlew bootBuildImage]</em></strong>).</p>
+<h2 id="147-recursos">14.7. <span style="color: #2e74b5">Recursos</span></h2>
+<ul>
+<li>el sitio web oficial de Kotlin, con su documentación, tutoriales y páginas “What’s New” de cada versión:<a href="https://stahe.github.io/ales-csharp-oct-2026/"><u><span style="color: #0563c1"> https://kotlinlang.org</span></u></a>;</li>
+<li>el entorno de pruebas en línea <a href="https://stahe.github.io/ales-csharp-mai-2008/"><u><span style="color: #0563c1">Kotlin Playground</span></u></a>, para probar código Kotlin en un navegador;</li>
+<li>los ejercicios <strong>Kotlin Koans</strong> , disponibles en el sitio web de Kotlin y en IntelliJ IDEA;</li>
+<li>las propuestas de evolución del lenguaje (KEEP), para mantenerse al día con las novedades de las próximas versiones:<a href="https://kotlinlang.org/docs/home.html"><u><span style="color: #0563c1"> https://github.com/Kotlin/KEEP</span></u></a>;</li>
+<li>el código fuente del compilador y de la biblioteca estándar, disponible en GitHub: <a href="https://kotlinlang.org/api/core/kotlin-stdlib/"><u><span style="color: #0563c1">https://github.com/JetBrains/kotlin</span></u></a>, y el código fuente de las corrutinas:<a href="https://kotlinlang.org/docs/coroutines-guide.html"><u><span style="color: #0563c1"> https://github.com/Kotlin/kotlinx.coroutines</span></u></a>;</li>
+<li>la documentación de la API de Java SE 25, para las clases del JDK utilizadas desde Kotlin: <a href="https://github.com/Kotlin/KEEP"><u><span style="color: #0563c1">https://docs.oracle.com/en/java/javase/25/docs/api/</span></u></a>;</li>
+<li>los libros *Kotlin in Action* (Manning) y *Effective Kotlin* de Marcin Moskała y, para la concurrencia en la JVM, *Java Concurrency in Practice* de Brian Goetz et al. (Addison-Wesley).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        Este curso, escrito por la IA <strong>Claude</strong> de Anthropic a petición de <strong>Serge Tahé</strong>, se pone a disposición del público bajo los términos de la
+        <em>licencia Creative Commons Atribución – No Comercial –
+        Compartir Igual 3.0 No adaptada</em>.
+
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
